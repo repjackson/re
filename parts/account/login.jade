@@ -4,8 +4,8 @@ template(name='login')
             .eight.wide.column
                 .ui.center.aligned.basic.segment
                     .ui.inline.header 
-                        img.ui.image(src="{{c.url 'one_logo' height=200 width=200 gravity='face' crop='fill'}}")
-                        |one
+                        img.ui.image(src="http://ramirezenriquez.com/wp-content/uploads/2017/06/ramirezenriquez_law_logo.png")
+                        |Ramirez and Enriquez
                     .ui.inline.grey.header login
 
                 div
@@ -30,7 +30,11 @@ template(name='login')
                     strong #{username}
                     |&nbsp;
                     i.sign.in.alternate.icon
-                // .ui.center.aligned.basic.segment    
-                //     a.ui.basic.button(href='/forgot_password')
-                //         i.refresh.icon
-                //         |forgot password
+                .ui.center.aligned.basic.segment    
+                    a.ui.basic.button(href='/forgot_password')
+                        i.refresh.icon
+                        |forgot password
+                .ui.center.aligned.basic.segment    
+                    a.ui.basic.button(href='/register')
+                        i.plus.icon
+                        |register
